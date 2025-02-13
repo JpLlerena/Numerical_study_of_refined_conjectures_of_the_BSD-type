@@ -46,11 +46,11 @@ This folder contains all the code used to obtained the results used in the artic
 3) A file called "Checking_in_R.sage". This code checks for every pair (E,p) in the database if it satisfies Conjecture 0.1, Conjecture 2.11, and Conjecture 2.12.
 4) A pdf file called "Explanation_For_R.pdf". The user can find an explnation of how the conjecture was checked when the ring R \ne Z. Specifically, how the authors calculated the projection to the Sylow decomposition.
 ## Disclaimer
-When creating the database we used the "eclib" implementation based on the work of Cremona. Nonetheless, for all the pairs (E,p) that did not satisfy one of the conjectures intented we checked with the other two implementations: One based on the work of Stein-Wuthrich and the second based on the work of Wuthrich. 
+When creating the database we used the "eclib" implementation based on the work of Cremona. Nonetheless, for all the pairs (E,p) that did not satisfy one of the conjectures intented we checked with the other two implementations: One based on the work of Stein and the second based on the work of Wuthrich. 
 
 We were not able to check for all the pais (E,p) that did not satisfy Conjecture 0.1 or Conjecture 2.12, do to the following reasons:
 1) When we check using the implementation based on the work of Wuthrich we got a *RecursionError* with one pair (E,p) that did not satisfy Conjecture 0.1 oand Conjecture 2.12 in SageMath. Nonetheless, this error was presented in only 1 pair (E,p). This pairs was (50056.a1, 6257). In all the other cases when we were able to use this implementation, we did not find any discrapencies with the values given by the "eclib" implementation.
-2) When we check using the implementation based on the work of Stein and Wuthrich, the program took to long to output a value. When the conductor was greater than 17612, the program took to long to finish and we got a Unix message saying that the program was *killed* i.e. Unix stopped the program (we do not know exactly why this happened).
+2) When we check using the implementation based on the work of Stein, the program took to long to output a value. When the conductor was greater than 17612, the program took to long to finish and we got a Unix message saying that the program was *killed* i.e. Unix stopped the program (we do not know exactly why this happened).
 Nevertheless, when checking with different implementation, we never got any discrepancy with the values in the database.
 
 ## Funding
